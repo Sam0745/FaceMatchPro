@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.RecyclerFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/containerCarousel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/userImageView"
+            android:layout_width="180dp"
+            android:layout_height="280dp"
+            android:layout_margin="10dp"
+            android:contentDescription="User Image"
+            app:layout_constraintBottom_toTopOf="@+id/resultText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/aadharImageView"
+            android:layout_width="180dp"
+            android:layout_height="280dp"
+            android:layout_margin="10dp"
+            android:contentDescription="Aadhar Card Image"
+            app:layout_constraintBottom_toTopOf="@+id/resultText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/captureButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capture Image"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/compareButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/uploadButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Aadhar Card Image"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/captureButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/compareButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Compare Images"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="217dp"
+            android:text=""
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/uploadButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
